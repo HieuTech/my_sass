@@ -1,0 +1,23 @@
+.intro{
+    margin-bottom: 50px;
+    background-color: $intro-background;
+    &-content{
+        padding: 20px ;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+        min-height: 200px;
+
+    }
+    &-items{
+        padding: 0 60px;
+        gap:10px;
+        display: flex;
+        align-items: center;
+
+    }
+    &-icon{
+        width: 55px;
+    }
+    
+}

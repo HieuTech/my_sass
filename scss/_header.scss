@@ -1,0 +1,60 @@
+.header {
+  padding: 30px;
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+  &-logo {
+    width: 50px;
+    height: 50px;
+  }
+  &-auth {
+    margin-left: auto;
+    .btn:first-child {
+      border: none;
+      .btn--outline {
+        color: black;
+      }
+    }
+    .btn:first-child:hover {
+      border: 1px solid red;
+      .btn--outline:first-child {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .btn-drop_menu{
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 100px;
+    &-item {
+      margin: 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .header {
+    padding: 0;
+
+    &-auth{
+        margin-left: auto;
+        .btn:last-child{
+            display: none;
+        }
+    }
+    .btn-drop_menu{
+        display: block;
+        padding: 15px;
+    }
+    .menu {
+      display: none;
+    }
+
+  }
+}

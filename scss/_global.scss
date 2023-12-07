@@ -1,0 +1,40 @@
+body {
+  line-height: 1;
+  font-family: $font;
+  font-weight: 400;
+}
+
+.highlight {
+  font-weight: 700;
+}
+.btn {
+  &--outline {
+    color: $primary-color;
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    background-color: #fff;
+  }
+
+  &--round {
+    color: $btn-round-color;
+    background-color: $primary-color;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
